@@ -1,0 +1,68 @@
+.title {
+    font-family: 'Stalinist One', cursive;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .title-border {
+    border: 0.2rem solid #dedede;
+    border-radius: 10rem;
+    padding: 1em;
+    box-shadow:
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #f0f0f0,
+        0 0 0.8rem #f0f0f0,
+        0 0 2.8rem #f0f0f0,
+        inset 0 0 1.3rem #f0f0f0;
+  }
+  
+  .title-glow {
+    animation: pulsate 1.5s infinite alternate;
+  }
+  
+  @keyframes pulsate {
+    100% {
+        text-shadow: 
+            0 0 4px #fafafa, 
+            0 0 11px #fafafa, 
+            0 0 19px #fafafa, 
+            0 0 40px #dedede, 
+            0 0 80px #dedede, 
+            0 0 90px #dedede, 
+            0 0 100px #dedede, 
+            0 0 150px #dedede;
+    }
+  
+    0% {
+        text-shadow: 
+            0 0 2px #fafafa, 
+            0 0 4px #fafafa,
+            0 0 6px #fafafa, 
+            0 0 10px #dedede, 
+            0 0 45px #dedede, 
+            0 0 55px #dedede, 
+            0 0 70px #dedede, 
+            0 0 80px #dedede;
+    }
+  }
+  
+  .overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2)
+  }
